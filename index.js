@@ -1,22 +1,19 @@
-/* IDENTIFICACIÓN DEL PUESTO
+
 let tituloDeLaPosicion = prompt("Título de la Vancante");
 let id = parseInt(prompt("Entre el ID del puesto"));
 let nombreCliente = prompt("Entre el nombre del cliente");
 let vacantes = parseInt(prompt("Cuántas vacantes hay que llenar para este puesto?"));
-let fechaInicio = Date.parse(prompt("Fecha de inicio del puesto")); /*conseguir prompt para fecha*/
-/*
-let fechaLimite = Date /*conseguir prompt para fecha. La fecha límite es 5 días antes de fechaInicio*/
-/*
-alert("El puesto " + tituloDeLaPosicion + " ID " + id + " para " + nombreCliente + " se ha registrado exitosamente y hay " + vacantes + " para llenar.")
+//let fechaInicio = Date.parse(prompt("Fecha de inicio del puesto")); /*conseguir prompt para fecha*/
 
-/*METRICAS DEL RECLUTADOR
+
+
 let invitaciones = parseInt(prompt("Cuántos candidatos fueron invitados a postularse?"));
 let invitacionesAceptadas = parseInt(prompt("Cuántos candidatos acceptaron las invitaciones y se postularon?"));
 let presentaciones = parseInt(prompt("Cuántos candidatos fueron presentados al cliente?"));
-let fechaPresentacion = Date /*conseguir prompt para fecha
+//let fechaPresentacion = Date conseguir prompt para fecha
 let entrevistas = parseInt(prompt("Cuántos candidatos fueron entrevistados por el cliente?"));
 let cantContrataciones = parseInt(prompt("Cuántos candidatos fueron contratados por el cliente?"))
-let fechaCierrePuesto = Date /*conseguir prompt para fecha*/
+//let fechaCierrePuesto = Date /*conseguir prompt para fecha*/
 
 
 /* functions para transformar fechas
@@ -42,22 +39,6 @@ let buscaPuesto = prompt("Ingresse el titulo de la posicion");
 
 const puestoAbierto = puestos.find(el => el.titulo === buscaPuesto);
 alert(puestoAbierto);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
