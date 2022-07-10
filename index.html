@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stles.css">
+    <title>HireZen - Tracker de Puestos de Trabajo</title>
+    
+</head>
+<body class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #51c7dbc9;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HireZen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Todos los Puestos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Métricas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Puestos Activos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Puestos Cerrados</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Organice, controle, contrate.
+            </span>
+          </div>
+        </div>
+      </nav>
+    <h3 class="fontH3">Datos de la posición</h3>
+    <form class="col-12">
+        <div class="col-12 row-6 d-inline-flex">
+            <div class="row col-5">
+                <p for="Título" class="font " style="width:auto">Título de la Posición</p>
+                <input type="text" Required placeholder="Título" class="campo" style="width:auto">
+            </div>
+            <div class="row col-4">
+                <p for="Cliente" class="font col-6" style="width:auto">Nombre del Cliente</p>
+                <input type="text" Required placeholder="Cliente" class=" campo col-5">
+            </div>
+            <div class="row col-3">
+                <p for="ID" class="font col-7" style="width:auto">ID de la Posición</p>
+                <input type="text" Required placeholder="ID" class=" campo col-5">
+            </div>
+        </div>
+        <div class="col-12 row-6 d-inline-flex">
+            <div class="row col-5">
+                <p for="Inicio" class="font col-8" style="width:auto">Fecha de Início del contratado</p>
+                <input type="date" Required placeholder="Primer día de trabajo" class="col-4 campo">
+            </div>
+            <div class="row col-5">
+                <p for="Límite" class="font col-8" style="width:auto">Fecha Límite de Contratación</p>
+                <input type="date" Required placeholder="Fecha límite para que el candidato firme su contrato" class="col-4 campo">
+            </div>
+            <div class="row col-4">
+                <p for="Vacantes" class="font col-6" style="width: auto">Cantidad de vacantes</p>
+                <input type="number" Required placeholder="" class="col-2 campo">
+            </div>
+        </div>
+    <h3 class="fontH3">Datos para tus métricas</h3>
+        <div class="col-12 row-1 d-inline-flex">
+            <div class="row col-4">
+                <p for="Assignación" class="font col-6" style="width:auto">Fecha de Assignación</p>
+                <input type="date" Required placeholder="Cuándo recibiste la Posición" class="campo col-4">
+            </div>
+            <div class="row col-4">
+                <p for="Contratado" class="font col-8" style="width:auto">Fecha de la Contratación</p>
+                <input type="date" Required placeholder="Fecha en la cual el candidato firmó su contrato" class="campo col-4">
+            </div>
+            <div class="row col-6">
+                <p for="Invitaciones" class="font col-8" style="width:auto">Cantidad de candidatos invitados</p>
+                <input type="number" Required placeholder="Cuántas personas invitaste a que se postulen" class="campo col-2">
+            </div>
+        </div>
+        <div class="col-12 row-1 d-inline-flex">
+            <div class="row col-4">
+                <p for="Presentaciones" class="font" style="width:auto">Candidatos Presentados al cliente</p>
+                <input type="number" Required placeholder="Cuántas personas presentaste al cliente" class="campo col-2">
+            </div>
+            <div class="row col-4">
+                <p for="Entrevistas" class="font" style="width:auto">Candidatos Entrevistados por el cliente</p>
+                <input type="number" Required placeholder="Cuántas personas el cliente quiso entrevistar" class="campo col-2">
+            </div>
+            <div class="row col-4">
+                <p for="Contratados" class="font col-8" style="width:auto">Candidatos Contratados</p>
+                <input type="number" Required placeholder="Cuántas personas el cliente contrató" class="campo col-2">
+            </div>
+        </div>
+        <div class="formFields">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar formulario">
+        </div>
+    </form>
+    <h3 class="fontH3">Posiciones Activas</h3>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Título</th>
+            <th scope="col">Vacantes</th>
+            <th scope="col">Fecha de Inicio</th>
+            <th scope="col">Límite para la Contratación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">123456</th>
+            <td>Lenovo</td>
+            <td>Social Media Coordinator</td>
+            <td>1</td>
+            <td>25/12/2022</td>
+            <td>20/12/2022</td>
+          </tr>
+          <tr>
+            <th scope="row">753951</th>
+            <td>Coca-Cola</td>
+            <td>Supply and Inventory Engineer</td>
+            <td>2</td>
+            <td>10/10/2022</td>
+            <td>05/10/2022</td>
+          </tr>
+          <tr>
+            <th scope="row">167761</th>
+            <td>Adidas</td>
+            <td>CAD Designer</td>
+            <td>1</td>
+            <td>02/09/2022</td>
+            <td>27/08/2022</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
