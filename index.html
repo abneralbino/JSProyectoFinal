@@ -44,67 +44,67 @@
         <div class="col-12 row-6 d-inline-flex">
             <div class="row col-5">
                 <p for="Título" class="font " style="width:auto">Título de la Posición</p>
-                <input type="text" Required placeholder="Título" class="campo" style="width:auto">
+                <input type="text"  placeholder="Título" class="campo" style="width:auto" id="tituloDeLaPosicion">
             </div>
             <div class="row col-4">
                 <p for="Cliente" class="font col-6" style="width:auto">Nombre del Cliente</p>
-                <input type="text" Required placeholder="Cliente" class=" campo col-5">
+                <input type="text" placeholder="Cliente" class=" campo col-5" id="nombreCliente">
             </div>
             <div class="row col-3">
                 <p for="ID" class="font col-7" style="width:auto">ID de la Posición</p>
-                <input type="text" Required placeholder="ID" class=" campo col-5">
+                <input type="text" placeholder="ID" class=" campo col-5" id="idPosicion">
             </div>
         </div>
         <div class="col-12 row-6 d-inline-flex">
             <div class="row col-5">
-                <p for="Inicio" class="font col-8" style="width:auto">Fecha de Início del contratado</p>
-                <input type="date" Required placeholder="Primer día de trabajo" class="col-4 campo">
+                <p for="Inicio" class="font col-8" style="width:auto">Fecha de Início Requerida</p>
+                <input type="date" placeholder="Primer día de trabajo" class="col-4 campo" id="fechaInicio">
             </div>
             <div class="row col-5">
                 <p for="Límite" class="font col-8" style="width:auto">Fecha Límite de Contratación</p>
-                <input type="date" Required placeholder="Fecha límite para que el candidato firme su contrato" class="col-4 campo">
+                <input type="date" placeholder="Fecha límite para que el candidato firme su contrato" class="col-4 campo" id="fechaLimite">
             </div>
             <div class="row col-4">
                 <p for="Vacantes" class="font col-6" style="width: auto">Cantidad de vacantes</p>
-                <input type="number" Required placeholder="" class="col-2 campo">
+                <input type="number" placeholder="" class="col-2 campo" id="vacantes">
             </div>
         </div>
     <h3 class="fontH3">Datos para tus métricas</h3>
         <div class="col-12 row-1 d-inline-flex">
             <div class="row col-4">
                 <p for="Assignación" class="font col-6" style="width:auto">Fecha de Assignación</p>
-                <input type="date" Required placeholder="Cuándo recibiste la Posición" class="campo col-4">
+                <input type="date" placeholder="Cuándo recibiste la Posición" class="campo col-4" id="fechaAsignacion">
             </div>
             <div class="row col-4">
                 <p for="Contratado" class="font col-8" style="width:auto">Fecha de la Contratación</p>
-                <input type="date" Required placeholder="Fecha en la cual el candidato firmó su contrato" class="campo col-4">
+                <input type="date" placeholder="Fecha en la cual el candidato firmó su contrato" class="campo col-4" id="fechaCierrePuesto">
             </div>
             <div class="row col-6">
                 <p for="Invitaciones" class="font col-8" style="width:auto">Cantidad de candidatos invitados</p>
-                <input type="number" Required placeholder="Cuántas personas invitaste a que se postulen" class="campo col-2">
+                <input type="number" placeholder="Cuántas personas invitaste a que se postulen" class="campo col-2" id="invitaciones">
             </div>
         </div>
         <div class="col-12 row-1 d-inline-flex">
             <div class="row col-4">
                 <p for="Presentaciones" class="font" style="width:auto">Candidatos Presentados al cliente</p>
-                <input type="number" Required placeholder="Cuántas personas presentaste al cliente" class="campo col-2">
+                <input type="number" placeholder="Cuántas personas presentaste al cliente" class="campo col-2" id="presentaciones">
             </div>
             <div class="row col-4">
                 <p for="Entrevistas" class="font" style="width:auto">Candidatos Entrevistados por el cliente</p>
-                <input type="number" Required placeholder="Cuántas personas el cliente quiso entrevistar" class="campo col-2">
+                <input type="number" placeholder="Cuántas personas el cliente quiso entrevistar" class="campo col-2" id="entrevistas">
             </div>
             <div class="row col-4">
                 <p for="Contratados" class="font col-8" style="width:auto">Candidatos Contratados</p>
-                <input type="number" Required placeholder="Cuántas personas el cliente contrató" class="campo col-2">
+                <input type="number" placeholder="Cuántas personas el cliente contrató" class="campo col-2" id="contrataciones">
             </div>
         </div>
         <div class="formFields">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar formulario">
+            <button type="submit" value="Guardar" id="enviar">Guardar</button>
+            <button type="reset" value="Borrar formulario" id="limpiar">Limpiar</button>
         </div>
     </form>
     <h3 class="fontH3">Posiciones Activas</h3>
-    <table class="table table-striped">
+    <table class="table table-striped" id="puestosAtivos">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -117,7 +117,7 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">123456</th>
+            <td>123456</td>
             <td>Lenovo</td>
             <td>Social Media Coordinator</td>
             <td>1</td>
@@ -143,7 +143,7 @@
           
         </tbody>
       </table>
-    <script src="./js/main.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

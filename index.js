@@ -1,19 +1,68 @@
+//Datos de la posicion
+let tituloDeLaPosicion = document.getElementById("tituloDeLaPosicion");
+let nombreCliente = document.getElementById("nombreCliente");
+let idPosicion = parseInt(document.getElementById("idPosicion"));
+let vacantes = parseInt(document.getElementById("vacantes"));
+let fechaInicio = Date.parse(document.getElementById("fechaInicio")); //conseguir prompt para fecha
+let fechaLimite = Date.parse(document.getElementById("fechaLimite"));
 
-let tituloDeLaPosicion = prompt("Título de la Vancante");
-let id = parseInt(prompt("Entre el ID del puesto"));
-let nombreCliente = prompt("Entre el nombre del cliente");
-let vacantes = parseInt(prompt("Cuántas vacantes hay que llenar para este puesto?"));
-//let fechaInicio = Date.parse(prompt("Fecha de inicio del puesto")); /*conseguir prompt para fecha*/
+//Datos para tus méticas
+let fechaAsignacion = Date.parse(document.getElementById("fechaAsignacion"));
+let fechaCierrePuesto = Date.parse(document.getElementById("fechaCierrePuesto")) //conseguir prompt para fecha
+let invitaciones = parseInt(document.getElementById("invitaciones"));
+let presentaciones = parseInt(document.getElementById("presentaciones"));
+let entrevistas = parseInt(document.getElementById("entrevistas"));
+let cantContrataciones = parseInt(document.getElementById("contraciones"));
+
+let puestoArray = ["tituloDeLaPosicion", 'cliente', 'id', 'vacantes', 'inicio', 'limite' ];
+
+function nuevoPuesto () {
+    let lineaPuesto = puestoArray.map(puesto => `<tr>${puesto}</tr>`).join(`\n`);
+    document.querySelector('tbody').innerHTML = lineaPuesto;
+}
+
+nuevoPuesto();
+
+let guardar = document.querySelector('button');
+let input = document.querySelector('input');
+
+guardar.addEventListener('click', () =>{
+    puestoArray.push(input.value);
+    input.value = '';
+    nuevoPuesto();
+});
 
 
 
-let invitaciones = parseInt(prompt("Cuántos candidatos fueron invitados a postularse?"));
-let invitacionesAceptadas = parseInt(prompt("Cuántos candidatos acceptaron las invitaciones y se postularon?"));
-let presentaciones = parseInt(prompt("Cuántos candidatos fueron presentados al cliente?"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let invitacionesAceptadas = parseInt(prompt("Cuántos candidatos acceptaron las invitaciones y se postularon?"));
 //let fechaPresentacion = Date conseguir prompt para fecha
-let entrevistas = parseInt(prompt("Cuántos candidatos fueron entrevistados por el cliente?"));
-let cantContrataciones = parseInt(prompt("Cuántos candidatos fueron contratados por el cliente?"))
-//let fechaCierrePuesto = Date /*conseguir prompt para fecha*/
+
+
 
 
 /* functions para transformar fechas
@@ -25,7 +74,7 @@ function formatoDeFecha(fecha) {
 } 
 
 alert (fecha);*/
-
+/* 
 const puestos = [
     {titulo: "Ingeniero de Produccion", id: 123456, nombreCliente: "Lenovo", vacantes: 5, fechaInicio: 25/12/2022, fechaLimite: 20/12/2022},
     {titulo: "Contador", id: 123686, nombreCliente: "Samsung", vacantes: 1, fechaInicio: 21/10/2022, fechaLimite: 16/10/2022},
@@ -40,7 +89,7 @@ let buscaPuesto = prompt("Ingresse el titulo de la posicion");
 const puestoAbierto = puestos.find(el => el.titulo === buscaPuesto);
 alert(puestoAbierto);
 
-
+ */
 
 /* partes de codigo que podremos llegar a usar
 
